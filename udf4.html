@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="ans"></h1>
+
+    <script>
+        function num(w, x, y, z) {
+            if (w > x && w > y && w > z) {
+                document.getElementById("ans").innerHTML = w + " is greter.";
+            } else if (x > w && x > y && x > z) {
+                document.getElementById("ans").innerHTML = x + " is greter.";
+            } else if (y > w && y > x && y > z) {
+                document.getElementById("ans").innerHTML = y + " is greter.";
+            } else if (z > w && z > x && z > y) {
+                document.getElementById("ans").innerHTML = z + " is greter.";
+            } else {
+                document.getElementById("ans").innerHTML = "All number is same";
+            }
+        }
+        var a = parseInt(prompt("Enter First number"));
+        var b = parseInt(prompt("Enter Second number"));
+        var c = parseInt(prompt("Enter Third number"));
+        var d = parseInt(prompt("Enter Fourth number"));
+        num(a, b, c, d);
+    </script>
+
+</body>
+</html>
